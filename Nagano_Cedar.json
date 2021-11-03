@@ -1,0 +1,58 @@
+{
+    "Nagano_Cedar":{
+		"YieldModelType": "L",
+		"SAType": "2021",
+		
+		"SDMD":{
+			"H":   [25,     -1.066, -0.0348,         1 ],
+			"V":   [ 0.071560, -1.373859,  5062.0, -2.869785 ],
+			"NRf":   5.370947,
+			"DBH": [ 0.193943,  0.987164, -0.090657          ],
+			"HF":  [ 0.650787,  0.417356,  0.138768          ]
+        },
+		
+		"Density":{
+		    "Plant":   [1000, 5000],
+			"MinimumAtClearcut":  500
+		},
+		
+		"RegenerationCost":       [1000000, 100],
+		"ThinningPercent":        [10, 50],	
+		"AnnualInterestPercent":   0.9,
+		"HarvestingAges":	[20, 150, 5],
+		"MaxNumOfHarvest":	7,
+		"NumSearch":[3, 10000],
+				
+		"Thinning":{
+			"YieldRate":     0.8,
+			"Cost": 		3000,
+			"StumpHeight":	 0.5,
+			"LogLength":	 4.0,
+			"LoggingPitch":	 4.1,			
+			"Diameter":		[5,     6,    15,   16,   18,    20,    22,    24,    28,    30,   255],
+			"Price": 		[0,  3000,  3000, 8000, 8000,  9500,  9500, 11500, 11500, 12500, 12500]
+		},
+		
+		"Clearcut":{
+			"YieldRate":     0.9,
+			"Cost": 		6000,
+			"StumpHeight":	 0.5,
+			"LogLength":	 4.0,
+			"LoggingPitch":	 4.1,
+			"Diameter":		[5,     6,    15,   16,   18,    20,    22,    24,    28,    30,   255],
+			"Price": 		[0,  3000,  3000, 8000, 8000,  9500,  9500, 11500, 11500, 12500, 12500]
+		},
+	
+		"SA":{
+			"Comment": "Type L 1000 yen/ha degradation for SEV",
+			"NumRepeat":40,
+			"NumTempLevel":100,
+			"MetaSearchPercentile": 0.75,
+			"NumTotalLoopN":  [1, 8],
+			"NumTotalLoopPow":[3.55, 6.75],
+			"StartTemp": [ 0, -0.6, 0.6,  5],
+			"DiffTemp":  [ 0, -3.8, 1.4,  5],
+			"DistScale": [ 0, -1.2, 0.6,  5]
+		}
+	}
+}
